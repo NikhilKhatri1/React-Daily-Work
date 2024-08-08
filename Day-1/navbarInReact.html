@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../node_modules/react/umd/react.development.js"></script>
+    <script src="../node_modules/react-dom/umd/react-dom.development.js"></script>
+    <script src="../node_modules/@babel/standalone/babel.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            background-color: #222121;
+            color: #eee;
+            height: 50px;
+            align-items: center;
+            box-shadow: 0 0 10px rgba(94, 92, 92, 0.5);
+        }
+
+        .nav-brand {
+            font-size: 25px;
+            font-weight: bold;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-left: 10px;
+        }
+
+        div span {
+            margin: 0px 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .btn {
+            align-content: center;
+            display: flex;
+            margin-right: 20px;
+            height: 30px;
+        }
+
+        .inp {
+            height: 30px;
+            width: 220px;
+            margin-right: 5px;
+            border: none;
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        .search {
+            height: 30px;
+            width: 100px;
+            background-color: #fff;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 600;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        main {
+            color: #eee;
+            background-color: #424141;
+            height: 100vh;
+        }
+
+        .row {
+            display: grid;
+            grid-template-columns: 4fr 8fr;
+        }
+    </style>
+    <title>Navbar Using React</title>
+    <script type="text/babel">
+        function Navbar() {
+            return (
+                <nav>
+                    <div className="nav-brand">Shopper.</div>
+                    <div>
+                        <span>Home</span>
+                        <span>Content</span>
+                        <span>About</span>
+                        <span>Fashion</span>
+                    </div>
+                    <div className="btn">
+                        <input type="text" placeholder="Search Here.." className="inp" />
+                        <button className="search">Search</button>
+                    </div>
+                </nav>
+            );
+        }
+
+        function MainSection() {
+            return (
+                <section>
+                    <div className="row">
+                        <div className="col-4">This is column one</div>
+                        <div className="col-8">This is column two</div>
+                    </div>
+                </section>
+            );
+        }
+
+        ReactDOM.render(
+            <div>
+                <header><Navbar /></header>
+                <main><MainSection /></main>
+            </div>,
+            document.getElementById('root')
+        );
+    </script>
+</head>
+
+<body>
+    <noscript>Enable JS</noscript>
+    <div id="root"></div>
+</body>
+
+</html>

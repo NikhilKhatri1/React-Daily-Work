@@ -1,0 +1,24 @@
+<script>
+    function sndLowest(arr) {
+        if (arr.length < 2) {
+            alert("provide two or more");
+            return;
+        }
+        var lowest = null;
+        var sndLowest = null;
+        for (let num of arr) {
+            if (lowest === null || num < lowest) {
+                sndLowest = lowest;
+                lowest = num;
+            }
+            else if (num !== lowest && (sndLowest === null || num < sndLowest)) {
+                sndLowest = num;
+            }
+        }
+        if (sndLowest === null) {
+            alert("Second lowest not found");
+        }
+        return sndLowest;
+    }
+    document.write(sndLowest([20, 30, 1, 2]));
+</script>

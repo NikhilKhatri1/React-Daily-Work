@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap Setup  -->
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <!-- React setup -->
+    <script src="../node_modules/react/umd/react.development.js"></script>
+    <script src="../node_modules/react-dom/umd/react-dom.development.js"></script>
+    <script src="../node_modules/@babel/standalone/babel.js"></script>
+    <title>Login Design</title>
+    <style>
+        .lgn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 400px;
+        }
+    </style>
+    <script type="text/babel">
+        function Login() {
+            return (
+                <div class="lgn">
+                    <div>
+                        <form action="#" class="border border-2 p-4 rounded rounded-2 mt-4 alert alert-dismissible">
+                            <h2 class="bi bi-person-fill">User Login</h2>
+                            <button type="button" class="btn btn-close" data-bs-dismiss="alert"></button>
+                            <dl>
+                                <dt>User Name:</dt>
+                                <dd><input type="text" placeholder="username.." class="form-control" /></dd>
+                                <dt>Password: </dt>
+                                <dd><input type="text" placeholder="password.." class="form-control" /></dd>
+                            </dl>
+                            <button class="btn btn-primary w-100">Login</button>
+                        </form>
+                    </div>
+                </div >
+            )
+        }
+        ReactDOM.render(<Login />, document.getElementById("root"));
+    </script>
+</head>
+
+<body class="Container-fluid">
+    <noscript>Enable js</noscript>
+    <div id="root">
+
+    </div>
+</body>
+
+</html>

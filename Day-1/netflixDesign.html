@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap Setup  -->
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <!-- React setup -->
+    <script src="../node_modules/react/umd/react.development.js"></script>
+    <script src="../node_modules/react-dom/umd/react-dom.development.js"></script>
+    <script src="../node_modules/@babel/standalone/babel.js"></script>
+    <title>Netflix Design</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background: url(../images/netflix-background.jpg);
+            background-size: cover;
+        }
+
+        .shade {
+            background-color: rgba(0, 0, 0, 0.5);
+            height: 100vh;
+            padding: 0;
+            margin: 0;
+        }
+
+        .lang span {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 2px;
+        }
+
+        .dropdown {
+            /* border: 1px solid white; */
+            /* border-radius: 5px; */
+            font-weight: 600;
+            color: white;
+            width: 100px;
+            background-color: transparent;
+            height: 30px;
+            border: none;
+        }
+
+        .dropdown option {
+            color: #666;
+            border: none;
+            /* border-radius: 5px; */
+        }
+
+        main {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        @media (max-width:900px) {
+            main {
+                /* border: 1px solid red; */
+                width: 90%;
+                height: 200px;
+            }
+
+            main h1 {
+                font-size: 24px;
+                font-weight: bold;
+            }
+
+            main h4 {
+                font-size: 18px;
+                margin-top: 20px;
+            }
+
+            .main-btn {
+                margin-top: 20px;
+            }
+
+            .main-btn input {
+                height: 45px;
+                /* background-color: rgba(0, 0, 0, 0.5); */
+            }
+
+            .main-btn button {
+                height: 45px;
+            }
+        }
+    </style>
+    <script type="text/babel">
+        function Header() {
+            return (
+                <header class="p-4">
+                    <nav class=" d-flex justify-content-between">
+                        <div>
+                            <h3 class="text-danger" data-bs-target="#menu" datbs-toggle="offcanvas">Netflix</h3>
+                            <div class="offcanvas offcanvas-start" id="menu">
+                                <div class="offcanvas-header">
+                                    <h2>Netflix</h2>
+                                    <button class="btn btn-close" data-bs-dismissible="offcanvas"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <ul>
+                                        <li>Home</li>
+                                        <li>Content</li>
+                                        <li>Latest Movies</li>
+                                        <li>Sign Out</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center lang">
+                            <span class="bi bi-translate text-white me-1 border border-1 rounded rounded-2">
+                                <select class="dropdown ms-1">
+                                    <option>English</option>
+                                    <option>हिंदी</option>
+                                </select>
+                            </span>
+                            <button class="btn btn-danger mx-2 btn-sm">Signup</button>
+                        </div>
+                    </nav>
+                </header>
+            )
+        }
+        function Main() {
+            return (
+                <main class="text-center text-white">
+                    <h1>Unlimited movies, TV shows and more</h1>
+                    <h4> Watch anywhere. Cancel anytime. </h4>
+                    <div>
+                        <NetflixRegister />
+                    </div>
+                </main>
+            )
+        }
+        function NetflixRegister() {
+            return (
+                <div class="d-flex justify-content-center mt-4">
+                    <form action="#" class="input-group input-group-lg w-100 main-btn">
+                        <input type="text" placeholder="Your Email" class="form-control" />
+                        <button class="btn btn-danger ">Get Started <span class="bi bi-chevron-right"></span></button>
+                    </form>
+                </div>
+            )
+        }
+
+        function NetflixIndex() {
+            return (
+                <div class="shade">
+                    <header>
+                        <Header />
+                    </header>
+                    <Main />
+                </div>
+            )
+        }
+
+
+        ReactDOM.render(<NetflixIndex />, document.getElementById("root"));
+    </script>
+</head>
+
+<body class="Container-fluid">
+    <div id="root">
+
+    </div>
+</body>
+
+</html>

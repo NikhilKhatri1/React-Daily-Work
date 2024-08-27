@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Increment Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        button {
+            font-size: 16px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        h4 {
+            font-size: 24px;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="Count()">Click me</button>
+    <h4 id="demo"></h4>
+
+    <script>
+        a = 42;
+        function Count() {
+            a += 1; // Increment a by 1
+            document.getElementById("demo").innerHTML = a; // Display result
+        }
+    </script>
+</body>
+
+</html>

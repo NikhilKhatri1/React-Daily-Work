@@ -8,12 +8,12 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle.js';
 // import { FormDemo } from './React-Tutorial/Day-9/form-demo.jsx';
-import { Counter } from './React-Tutorial/Day-9/btnCounter.jsx';
+import { Form } from './React-Tutorial/Day-9/Form.jsx';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
-    <Counter />
+    <Form />
   </React.StrictMode>
 );
 

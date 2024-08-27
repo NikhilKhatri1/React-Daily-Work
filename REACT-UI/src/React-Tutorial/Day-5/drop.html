@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<<<<<<< HEAD
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+
+=======
+>>>>>>> 83e13b1767b246b5850f60c3598b3d6a3a35bab7
+    <script>
+        // Data for people
+        const people = [
+            { name: 'Alice', age: 20, city: 'NY', hobbies: ['A', 'B', 'C'] },
+            { name: 'Mango', age: 23, city: 'BC', hobbies: ['C', 'B', 'A'] },
+            { name: 'Alan', age: 29, city: 'UK', hobbies: ['K', 'C', 'D'] }
+        ];
+
+        // Function to populate the select element
+        function populateSelect() {
+            const selectElement = document.querySelector("select");
+
+            people.forEach((person) => {
+                var option = document.createElement("option");
+                option.value = person.name; // Set the value of the option
+                option.innerHTML = person.name; // Set the display text of the option
+                selectElement.appendChild(option); // Append the option to the select element
+            });
+        }
+
+        // Function to display person details based on selection
+        function displayDetails() {
+            const selectElement = document.querySelector("select");
+            const details = document.getElementById("details");
+            const selectedName = selectElement.value;
+            const selectedPerson = people.find(person => person.name === selectedName);
+
+            if (selectedPerson) {
+                // Build the HTML string for the details
+                details.innerHTML = `
+                    <div>
+                        <h1>${selectedPerson.name}</h1>
+                        <p>Age: ${selectedPerson.age}</p>
+                        <p>City: ${selectedPerson.city}</p>
+                        <p>Hobbies: ${selectedPerson.hobbies.join(', ')}</p>
+                    </div>
+                `;
+            } else {
+                // Clear details if no person is selected
+                details.innerHTML = '';
+            }
+        }
+
+        // Initialize the page
+        function bodyLoad() {
+            populateSelect();
+            document.querySelector("select").addEventListener("change", displayDetails);
+        }
+    </script>
+</head>
+
+<body onload="bodyLoad()">
+<<<<<<< HEAD
+    <div class="p-2 m-2">
+        <select id="peopleSelect" class="form-select w-25">
+
+        </select>
+        <div id="details">
+
+=======
+    <div>
+        <select id="peopleSelect">
+            <!-- Options will be appended here -->
+        </select>
+        <div id="details">
+            <!-- Details will be displayed here -->
+>>>>>>> 83e13b1767b246b5850f60c3598b3d6a3a35bab7
+        </div>
+    </div>
+</body>
+
+</html>

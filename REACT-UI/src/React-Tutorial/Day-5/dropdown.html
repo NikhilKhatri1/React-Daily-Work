@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <script>
+        function bodyLoad() {
+            const people = [
+                { id: 1, name: "Alice", age: 20, city: "NY", hobbies: ["A", "B", "C"] },
+                { id: 2, name: "Bob", age: 30, city: "Delhi", hobbies: ["C", "D", "E"] },
+                { id: 3, name: "Make", age: 24, city: "Hyd", hobbies: ["F", "G"] }
+            ]
+
+            var select = document.getElementById("dropdown");
+
+            people.map((person, index) => {
+                var option = document.createElement("option");
+                option.id = person.name;
+                option.innerHTML = person.name;
+
+
+                select.appendChild(option);
+                console.log(index)
+                if (index == 0) {
+                    selectHandler(person);
+                }
+                select.addEventListener("change", () => selectHandler(person, index));
+            });
+
+
+
+            function selectHandler(person, index) {
+                var { name, age, city, hobbies } = person;
+                var selectname = select.value;
+                if (selectname === name) {
+                    const details = document.getElementById("Details");
+                    details.innerHTML = `
+                    <h1>${name}</h1>
+                    <p>${age}</p>
+                    <p>${city}</p>
+                    <ul>
+                       ${hobbies.map(element => `<li>${element}</li>`).join('')}
+                        
+                    </ul>
+                    
+                    `;
+                }
+                console.log(selectname);
+            }
+        }
+    </script>
+</head>
+
+<body onload="bodyLoad()">
+    <div class="container-fluid p-2 m-2">
+        <select id="dropdown" class="form-select w-25">
+
+        </select>
+        <div id="Details">
+
+        </div>
+    </div>
+</body>
+
+</html>

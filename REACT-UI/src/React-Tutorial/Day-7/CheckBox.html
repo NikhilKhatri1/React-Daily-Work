@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheckBox</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            /* display: flex; */
+        }
+
+        .row {
+            margin: 20px;
+            border: 2px solid gray;
+            width: 600px;
+            height: 400px;
+            /* position: relative; */
+        }
+
+        .col-4 {
+            width: 200px;
+            height: 380px;
+            border: 2px solid gray;
+        }
+
+        .col-8 {
+            width: 360px;
+            height: 380px;
+            border: 2px solid gray;
+            overflow: auto;
+        }
+    </style>
+    <script>
+        function bodyLoad() {
+            var inputContainer = document.getElementById("Container");
+            const myArray = [
+                { Mobile: "Samsung", specs: { display: "OLED", model: "M-54", price: "10000" } },
+                { Mobile: "Apple", specs: { display: "Qled", model: "iphn-1", price: "100000" } },
+                { Mobile: "realme", specs: { display: "led", model: "r-10", price: "15000" } }
+            ];
+            var ul = document.createElement("ul");
+            ul.style.listStyle = "none";
+            myArray.map((mobile) => {
+                var input = document.createElement("input");
+                var li = document.createElement("li");
+                input.type = "checkbox";
+                input.value = mobile.Mobile;
+                var span = document.createElement("span");
+                span.innerHTML = mobile.Mobile;
+                span.className = "ms-2";
+                li.appendChild(input);
+                li.appendChild(span);
+                ul.appendChild(li);
+                inputContainer.appendChild(ul);
+                var inputdetails = document.getElementById("inputdetails");
+                input.addEventListener("click", function (e) {
+                    var div = document.createElement("div");
+                    div.id = "checked";
+
+                    if (e.target.checked) {
+                        div.innerHTML = `
+                            <h3>${mobile.Mobile}</h3>
+                            <p><b>Display: </b>${mobile.specs.display}</p>
+                            <p><b>Model: </b>${mobile.specs.model}</p>
+                            <p><b>Price: </b>${mobile.specs.price}</p>
+                        `
+                            ;
+                        inputdetails.appendChild(div);
+                        // console.log("hello")
+                    } else {
+                        inputdetails.removeChild(document.getElementById("checked"));
+                        // console.log("bye")
+                    }
+                })
+            })
+
+
+
+        }
+    </script>
+</head>
+
+<body onload="bodyLoad()">
+    <div class="row">
+        <div class="col-4 m-2">
+            <h3>Accessories</h3>
+            <div id="Container">
+
+            </div>
+        </div>
+        <div class="col-8 m-2">
+            <h3>Details</h3>
+            <div id="inputdetails">
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

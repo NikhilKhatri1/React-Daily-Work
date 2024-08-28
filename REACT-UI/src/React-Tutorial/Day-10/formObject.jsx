@@ -1,11 +1,12 @@
 import { useState } from "react";
 
 export function Form() {
-    const [count, setCount] = useState({
+    const [form, setForm] = useState({
         firstName: "Alice",
         lastName: "Bob",
         Email: 'AliceBob123@gmail.com'
     });
+
 
     return (
         <div className="w-25 m-4 p-4 border border-2">
@@ -14,9 +15,10 @@ export function Form() {
                     <p className="mt-2">First Name:</p>
                     <input type="text"
                         onChange={e => {
-                            setCount({ ...count, firstName: e.target.value });
+                            setForm({ ...form, firstName: e.target.value });
                         }}
                         className="form-control" style={{ height: "40px", width: "200px" }}
+                        value={form.firstName}
                     />
                 </label>
             </div>
@@ -25,9 +27,10 @@ export function Form() {
                     Last Name:
                     <input type="text"
                         onChange={e => {
-                            setCount({ ...count, lastName: e.target.value })
+                            setForm({ ...form, lastName: e.target.value })
                         }}
                         className="form-control" style={{ height: "40px", width: "200px" }}
+                        value={form.lastName}
                     />
                 </label>
             </div>
@@ -36,11 +39,16 @@ export function Form() {
                     Email:
                     <input type="text"
                         onChange={e => {
-                            setCount({ ...count, Email: e.target.value })
+                            setForm({ ...form, Email: e.target.value })
                         }}
                         className="form-control" style={{ height: "40px", width: "200px" }}
+                        value={form.Email}
                     />
                 </label>
+            </div>
+            <div>
+                <p>Name : {form.firstName} {form.lastName}</p>
+                <p>Email : {form.Email}</p>
             </div>
         </div>
     )

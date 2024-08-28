@@ -8,7 +8,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle.js';
 // import { FormDemo } from './React-Tutorial/Day-9/form-demo.jsx';
-import { Form } from './React-Tutorial/Day-9/Form.jsx';
+import { Form } from './React-Tutorial/Day-10/formObject.jsx';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(

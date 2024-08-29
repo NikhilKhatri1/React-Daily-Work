@@ -10,9 +10,9 @@ export function Counter() {
     };
 
     return (
-        <div>
+        <div className='p-4 m-4'>
             <p>Current count: {count}</p>
-            <button onClick={incrementTwice}>Increment Twice</button>
+            <button onClick={incrementTwice} className='btn btn-primary'>Increment Twice</button>
         </div>
     );
 }

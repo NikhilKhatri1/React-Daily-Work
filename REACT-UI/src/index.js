@@ -1,17 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+
+
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle.js';
-import App from './React-Tutorial/Day-10/map.jsx'; // Corrected import
-
+// import { FormDemo } from './React-Tutorial/Day-9/form-demo.jsx';
+import { Counter } from './React-Tutorial/Day-9/Counter.jsx';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
-    <App />
+    <Counter />
   </React.StrictMode>
 );
 

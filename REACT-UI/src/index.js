@@ -8,12 +8,14 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle.js';
 // import { FormDemo } from './React-Tutorial/Day-9/form-demo.jsx';
-import { Counter } from './React-Tutorial/Day-9/Counter.jsx';
+import { FakeStore } from './React-Tutorial/Day-10/Fakestore.jsx';
+// import { Checkbox } from './React-Tutorial/Day-9/Checkbox.jsx';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
-    <Counter />
+    <FakeStore />
+    {/* <Checkbox /> */}
   </React.StrictMode>
 );
 

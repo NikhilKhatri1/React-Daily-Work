@@ -8,14 +8,14 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle.js';
 
-import { ConditionalForm } from './React-Tutorial/Day-11/ConditionalForm.jsx';
+import { BasicFormik } from './React-Tutorial/Day-11/BasicFormik.jsx';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
     {/* <FakeStore /> */}
     {/* <Checkbox /> */}
-    <ConditionalForm />
+    <BasicFormik />
   </React.StrictMode>
 );
 

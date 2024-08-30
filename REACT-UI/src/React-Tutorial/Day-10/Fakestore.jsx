@@ -7,10 +7,7 @@ export function FakeStore() {
     const [selectedCategory, setSelectedCategory] = useState("All");
     const [cartItem, setCartItem] = useState([]);
     const [itemCount, setItemCount] = useState();
-
-    function CountItem() {
-        setItemCount(cartItem.length);
-    }
+    const [Amount, setAmount] = useState(0);
 
     // Load categories from the API
     function loadCategories() {
@@ -45,7 +42,26 @@ export function FakeStore() {
         loadCategories();
         loadProducts();
         CountItem();
+        CalculateAmount();
     }, []); // Empty dependency array ensures this runs only on mount
+
+    function CountItem() {
+        setItemCount(cartItem.length);
+    }
+
+    // Calculate Amount
+    function CalculateAmount() {
+        let totalAmount = 0;
+
+        cartItem.map(item => {
+            totalAmount += item.price;
+        });
+
+        setAmount(totalAmount.toFixed(2)); // Format to 2 decimal places
+    }
+    function HandleRemoveItem() {
+        console.log(cartItem.splice(cartItem.id, 0, 0));
+    }
 
     return (
         <div style={{ backgroundColor: "#111", height: "100%" }} className="p-lg-5 p-0 pt-lg-0">
@@ -81,26 +97,38 @@ export function FakeStore() {
                                             <button className="btn-close" data-bs-dismiss="modal" type="button"></button>
                                         </div>
                                         <div className="modal-body">
-                                            <table>
+                                            <table className="table table-hover border border-1">
                                                 <thead>
                                                     <tr>
                                                         <th>Product Name</th>
                                                         <th>Preview</th>
                                                         <th>Price</th>
+                                                        <th>Remove</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
                                                     {
-                                                        cartItem.map((item) => {
+                                                        cartItem.map((item) =>
                                                             <tr key={item.id}>
                                                                 <td>{item.title}</td>
-                                                                <td><img src={item.image} style={{ width: "50px", height: "50px" }} /> </td>
-                                                                <td>{item.price}</td>
+                                                                <td><img src={item.image} style={{ width: "50px", height: "50px" }} /></td>
+                                                                <td>{item.price.toLocaleString("en-in", { style: "currency", currency: "INR" })}</td>
+                                                                <td><button className=" btn btn-danger mt-2" onClick={HandleRemoveItem}><span className="bi bi-trash"></span></button></td>
                                                             </tr>
-                                                        })
+
+                                                        )
                                                     }
                                                 </tbody>
+                                                <tfoot>
+                                                    <tr>
+                                                        <th colSpan={2}>Total</th>
+                                                        <th>{Amount}</th>
+                                                    </tr>
+                                                </tfoot>
                                             </table>
+                                        </div>
+                                        <div className="modal-footer">
+                                            <button className="btn btn-primary">Buynow</button>
                                         </div>
                                     </div>
                                 </div>

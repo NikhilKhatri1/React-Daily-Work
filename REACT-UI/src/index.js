@@ -8,14 +8,15 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle.js';
 
-import { BasicFormik } from './React-Tutorial/Day-11/BasicFormik.jsx';
+import { FakeStore } from './React-Tutorial/Day-10/Fakestore.jsx';
+// import { BasicFormik } from './React-Tutorial/Day-11/BasicFormik.jsx';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
-    {/* <FakeStore /> */}
+    <FakeStore />
     {/* <Checkbox /> */}
-    <BasicFormik />
+    {/* <BasicFormik /> */}
   </React.StrictMode>
 );
 

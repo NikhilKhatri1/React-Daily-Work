@@ -111,7 +111,7 @@ export function FakeStore() {
                                 <li className="nav-item me-lg-3 me-0 fs-6 fw-semibold">
                                     <a className="nav-link active" href="#">Home</a>
                                 </li>
-                                {/* Dynamically generate categories */}
+                            
                                 {categories.slice(1).map(category => (
                                     <li className="nav-item me-lg-3 me-0 fs-6 fw-semibold" key={category}>
                                         <a className="nav-link" href="#" onClick={() => handleSelect({ target: { value: category } })}>{category}</a>
@@ -185,7 +185,7 @@ export function FakeStore() {
                         <h3 className="my-lg-2 text-center">Range</h3>
                         <div className="d-flex border border-2 border-secondary rounded rounded-3 justify-content-center align-items-center" style={{ height: "40px" }}>
                             <span className="me-lg-3">2 <span className="bi bi-star-fill text-success"></span></span>
-                            <input onChange={handleRatingChange} type="range" className="form-range" value={rating} min={1.0} max={4.9} step={0.01} style={{ width: "150px" }} />
+                            <input onChange={handleRatingChange} type="range" className="form-range" value={4} min={1.0} max={4.9} style={{ width: "150px" }} />
                             <span className="ms-lg-3">4 <span className="bi bi-star-fill text-success"></span></span>
                         </div>
                     </div>

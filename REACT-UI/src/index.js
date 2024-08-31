@@ -11,7 +11,8 @@ import 'bootstrap/dist/js/bootstrap.bundle.js';
 // import { FakeStore } from './React-Tutorial/Day-10/fake.jsx';
 // import { BasicFormik } from './React-Tutorial/Day-11/BasicFormik.jsx';
 // import { Ranging } from './React-Tutorial/Day-10/Range.jsx'
-import { CustomHook } from './React-Tutorial/Day-11/CustomHook.jsx'
+// import { CustomHook } from './React-Tutorial/Day-11/CustomHook.jsx'
+import { FetchinApi } from './React-Tutorial/Day-11/f1.jsx';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
@@ -20,7 +21,8 @@ root.render(
     {/* <Checkbox /> */}
     {/* <BasicFormik /> */}
     {/* <Ranging /> */}
-    <CustomHook />
+    <FetchinApi />
+    {/* <CustomHook /> */}
   </React.StrictMode>
 );
 

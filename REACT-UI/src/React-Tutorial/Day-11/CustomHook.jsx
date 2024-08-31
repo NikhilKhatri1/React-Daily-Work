@@ -1,7 +1,7 @@
-import { useIncrement } from "./useIncreament";
+import { useCount } from "./newHook.js";
 
 export function CustomHook() {
-    const { count, increment, reset } = useIncrement(0);
+    const { count, increment, reset } = useCount(0);
     return (
         <div className="container-fluid p-4 m-4">
             <h1>Count : {count}</h1>

@@ -10,7 +10,8 @@ import 'bootstrap/dist/js/bootstrap.bundle.js';
 
 // import { FakeStore } from './React-Tutorial/Day-10/fake.jsx';
 // import { BasicFormik } from './React-Tutorial/Day-11/BasicFormik.jsx';
-import { Ranging } from './React-Tutorial/Day-10/Range.jsx'
+// import { Ranging } from './React-Tutorial/Day-10/Range.jsx'
+import { CustomHook } from './React-Tutorial/Day-11/CustomHook.jsx'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
@@ -18,7 +19,8 @@ root.render(
     {/* <FakeStore /> */}
     {/* <Checkbox /> */}
     {/* <BasicFormik /> */}
-    <Ranging />
+    {/* <Ranging /> */}
+    <CustomHook />
   </React.StrictMode>
 );
 

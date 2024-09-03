@@ -13,7 +13,8 @@ import 'bootstrap/dist/js/bootstrap.bundle.js';
 // import { Ranging } from './React-Tutorial/Day-10/Range.jsx'
 // import { CustomHook } from './React-Tutorial/Day-11/CustomHook.jsx'
 // import { FetchinApi } from './React-Tutorial/Day-11/f1.jsx';
-import { OptionDesign } from './React-Tutorial/Day-8/OptionDesign1.jsx';
+// import { OptionDesign } from './React-Tutorial/Day-8/OptionDesign1.jsx';
+import { Counter } from './React-Tutorial/Day-1/useSttate.jsx';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
@@ -23,7 +24,7 @@ root.render(
     {/* <BasicFormik /> */}
     {/* <Ranging /> */}
     {/* <FetchinApi /> */}
-    <OptionDesign />
+    <Counter />
     {/* <CustomHook /> */}
   </React.StrictMode>
 );

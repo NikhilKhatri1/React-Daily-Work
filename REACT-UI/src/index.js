@@ -24,7 +24,7 @@ root.render(
     {/* <BasicFormik /> */}
     {/* <Ranging /> */}
     {/* <FetchinApi /> */}
-    <UseEffectHook />
+    < UseEffectHook />
     {/* <CustomHook /> */}
   </React.StrictMode>
 );

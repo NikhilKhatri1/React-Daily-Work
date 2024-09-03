@@ -6,10 +6,10 @@ export function UseEffectHook() {
         setTimeout(() => {
             setCount(count => count + 1)
         }, 2000)
-    })
+    }, [count])
 
     return (
-        <div className="container-fluid m-4 p-4">
+        <div className="m-4 p-4">
             <h1>Count :  {count} Every 2 Seconds </h1>
         </div>
     )

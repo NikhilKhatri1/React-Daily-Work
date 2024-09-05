@@ -15,7 +15,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.js';
 // import { FetchinApi } from './React-Tutorial/Day-11/f1.jsx';
 // import { OptionDesign } from './React-Tutorial/Day-8/OptionDesign1.jsx';
 // import { UseEffectHook } from './React-Tutorial/Day-2/useEffect.jsx';
-import { UseRefHookDom } from './React-Tutorial/Day-12/useRefDom.jsx';
+import { UseMemoHook } from './React-Tutorial/Day-12/useMemoHook.jsx';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
@@ -25,7 +25,7 @@ root.render(
     {/* <BasicFormik /> */}
     {/* <Ranging /> */}
     {/* <FetchinApi /> */}
-    < UseRefHookDom />
+    < UseMemoHook />
     {/* <CustomHook /> */}
   </React.StrictMode>
 );

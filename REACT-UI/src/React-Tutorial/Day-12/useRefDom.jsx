@@ -2,7 +2,7 @@ import { useRef } from "react";
 export function UseRefHookDom() {
     const DomElem = useRef();
     const btnClick = () => {
-        console.log(DomElem);
+        console.log(DomElem.current);
     }
     return (
         <div className="m-4 p-4">

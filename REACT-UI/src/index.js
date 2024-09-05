@@ -15,19 +15,13 @@ import 'bootstrap/dist/js/bootstrap.bundle.js';
 // import { FetchinApi } from './React-Tutorial/Day-11/f1.jsx';
 // import { OptionDesign } from './React-Tutorial/Day-8/OptionDesign1.jsx';
 // import { UseEffectHook } from './React-Tutorial/Day-2/useEffect.jsx';
-import { UseMemoHook } from './React-Tutorial/Day-12/useMemoHook.jsx';
+import { UseMemoComponent } from './React-Tutorial/Day-12/useMemoComponent.jsx';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
-  <React.StrictMode>
-    {/* <FakeStore /> */}
-    {/* <Checkbox /> */}
-    {/* <BasicFormik /> */}
-    {/* <Ranging /> */}
-    {/* <FetchinApi /> */}
-    < UseMemoHook />
-    {/* <CustomHook /> */}
-  </React.StrictMode>
+
+  < UseMemoComponent />
+
 );
 
 // If you want to start measuring performance in your app, pass a function

@@ -8,19 +8,13 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle.js';
 
-// import { FakeStore } from './React-Tutorial/Day-10/fake.jsx';
-// import { BasicFormik } from './React-Tutorial/Day-11/BasicFormik.jsx';
-// import { Ranging } from './React-Tutorial/Day-10/Range.jsx'
-// import { CustomHook } from './React-Tutorial/Day-11/CustomHook.jsx'
-// import { FetchinApi } from './React-Tutorial/Day-11/f1.jsx';
-// import { OptionDesign } from './React-Tutorial/Day-8/OptionDesign1.jsx';
-// import { UseEffectHook } from './React-Tutorial/Day-2/useEffect.jsx';
-import { UseMemoComponent } from './React-Tutorial/Day-12/useMemoComponent.jsx';
+import { ReducerDemo } from './React-Tutorial/Day-13/reducer-demo.jsx';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
 
-  < UseMemoComponent />
+  < ReducerDemo />
 
 );
 

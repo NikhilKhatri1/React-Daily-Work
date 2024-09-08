@@ -8,13 +8,13 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle.js';
 
-import { ClickCount } from './React-Tutorial/Day-13/clickCounterRef.jsx';
+import { FocusInput } from './React-Tutorial/Day-13/focusingInput.jsx';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
 
-  < ClickCount />
+  < FocusInput />
 
 );
 

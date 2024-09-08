@@ -8,13 +8,13 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle.js';
 
-import { ReducerDemo } from './React-Tutorial/Day-13/reducer-demo.jsx';
+import { ClickCount } from './React-Tutorial/Day-13/clickCounterRef.jsx';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
 
-  < ReducerDemo />
+  < ClickCount />
 
 );
 

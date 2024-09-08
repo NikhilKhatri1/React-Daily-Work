@@ -15,6 +15,7 @@ export function UseRefHook() {
             <button onClick={() => { setValue(prev => prev - 1) }} className="btn btn-warning">-1</button>
             <h1 className="my-3 mx-2"> {value}</h1>
             <button onClick={() => { setValue(prev => prev + 1) }} className="btn btn-warning">+1</button>
+            {/* <h1>Count Rerender : {count} </h1> */}
             <h1>Count Rerender : {count.current} </h1>
         </div>
     )

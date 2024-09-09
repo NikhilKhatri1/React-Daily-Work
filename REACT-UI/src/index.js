@@ -8,13 +8,15 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle.js';
 
-import { CatFriends } from './React-Tutorial/Day-13/ScrollImg.jsx';
+
+import App from './React-Tutorial/Day-14/Main.jsx';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
 
-  < CatFriends />
+  <App />
 
 );
 

@@ -8,13 +8,13 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle.js';
 
-import { FocusInput } from './React-Tutorial/Day-13/focusingInput.jsx';
+import { CatFriends } from './React-Tutorial/Day-13/ScrollImg.jsx';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
 
-  < FocusInput />
+  < CatFriends />
 
 );
 

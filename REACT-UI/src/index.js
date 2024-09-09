@@ -9,14 +9,15 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle.js';
 
 
-import App from './React-Tutorial/Day-14/Main.jsx';
+// import App from './React-Tutorial/Day-14/app.jsx';
+import { ContextDemo } from './React-Tutorial/Day-14/useContext-demo.jsx';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
 
-  <App />
+  <ContextDemo />
 
 );
 

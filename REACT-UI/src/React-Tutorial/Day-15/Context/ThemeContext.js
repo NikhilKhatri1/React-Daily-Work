@@ -1,8 +1,8 @@
 import React, { createContext, useState } from 'react'
 
-const ThemeContext = createContext();
+export const ThemeContext = createContext();
 
-function ThemeProvider({ children }) {
+export function ThemeProvider({ children }) {
     const [theme, setTheme] = useState('light');
 
     const toggleTheme = () => {
@@ -16,4 +16,3 @@ function ThemeProvider({ children }) {
     )
 }
 
-export { ThemeContext, ThemeProvider };

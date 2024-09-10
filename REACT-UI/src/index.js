@@ -11,14 +11,15 @@ import 'bootstrap/dist/js/bootstrap.bundle.js';
 
 // import App from './React-Tutorial/Day-14/app.jsx';
 // import { ContextDemo } from './React-Tutorial/Day-14/useContext-demo.jsx';
-import App from './React-Tutorial/Day-15/App.jsx';
+// import App from './React-Tutorial/Day-15/App.jsx';
+import CartDemo from './React-Tutorial/Day-15/CartContext/CartContext.jsx';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
 
-  <App />
+  <CartDemo />
 
 );
 

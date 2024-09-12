@@ -13,7 +13,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.js';
 // import { ContextDemo } from './React-Tutorial/Day-14/useContext-demo.jsx';
 // import App from './React-Tutorial/Day-15/App.jsx';
 // import CartDemo from './React-Tutorial/Day-15/CartContext/CartContext.jsx';
-import { Car } from './React-Tutorial/Day-16/classComponent';
+import { Car } from './React-Tutorial/Day-16/propClass';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

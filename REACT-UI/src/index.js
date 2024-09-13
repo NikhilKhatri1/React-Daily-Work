@@ -7,9 +7,10 @@ import reportWebVitals from './reportWebVitals';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle.js';
+import App from './React-Tutorial/Day-15/App';
 
 
-import ParentComponent from './React-Tutorial/Day-17/ParentComponent';
+// import ParentComponent from './React-Tutorial/Day-17/ParentComponent';
 
 
 
@@ -17,7 +18,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
 
-  <ParentComponent />
+  <App />
 
 );
 

@@ -9,7 +9,8 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle.js';
 
 
-import App from './React-Tutorial/Day-15/App';
+// import App from './React-Tutorial/Day-15/App';
+import { ContextDemo } from './React-Tutorial/Day-15/ContextDemo';
 // import ParentComponent from './React-Tutorial/Day-17/ParentComponent';
 
 
@@ -18,7 +19,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
 
-  <App />
+  <ContextDemo />
 
 );
 

@@ -1,46 +1,44 @@
+import { useContext, createContext, useState } from "react";
 
-import { createContext, useContext, useState } from "react"
-
-let UserContext = createContext(null);
+const userContext = createContext(null);
 
 export function Level1Component() {
-
-    let context = useContext(UserContext);
+    const context = useContext(userContext);
 
     return (
         <div className="m-4 p-4 bg-danger text-white">
-            <h2>Level-1 Component</h2>
-            {context}
+            <h1>Level-1 Component</h1>
+            <p>{context} </p>
             <Level2Component />
         </div>
     )
+
 }
 
 export function Level2Component() {
-
-    let context = useContext(UserContext);
+    const context = useContext(userContext);
 
     return (
         <div className="m-4 p-4 bg-warning text-dark">
-            <h2>Level-2 Component</h2>
-            <p>{context}</p>
+            <h1>level-2 Component</h1>
+            <p>{context} </p>
         </div>
     )
 }
 
 export function ContextDemo() {
-    const [msg, setMsg] = useState();
+    const [msg, setMsg] = useState('');
 
-    function handleNameChange(e) {
-        setMsg(e.target.value)
+    function HandleChange(e) {
+        setMsg(e.target.value);
     }
 
     return (
-        <div className="container-fluid bg-dark text-white p-4">
-            <UserContext.Provider value={msg}>
-                <h1>Parent - <input type="text" onChange={handleNameChange} /> </h1>
+        <div className="m-4 p-4 bg-dark text-white">
+            <userContext.Provider value={msg} >
+                <h1>Parent Component : <input type="text" value={msg} onChange={HandleChange} /></h1>
                 <Level1Component />
-            </UserContext.Provider>
+            </userContext.Provider>
         </div>
     )
 }

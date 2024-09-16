@@ -9,7 +9,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle.js';
 
 
-import App from './React-Tutorial/Day-18/Routing.jsx'
+import ControlledDemo from './React-Tutorial/Day-19/ControlledDemo.jsx';
 
 
 
@@ -17,7 +17,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
 
-  <App />
+  <ControlledDemo />
 
 );
 

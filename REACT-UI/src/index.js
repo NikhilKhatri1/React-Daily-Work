@@ -11,7 +11,8 @@ import 'bootstrap/dist/js/bootstrap.bundle.js';
 
 // import App from './React-Tutorial/Day-15/App';
 // import { ContextDemo } from './React-Tutorial/Day-15/ContextDemo';
-import { UserContextProvider } from './React-Tutorial/Day-15/UserContext';
+// import { UserContextProvider } from './React-Tutorial/Day-15/UserContext';
+import App from './React-Tutorial/Day-15/App';
 // import ParentComponent from './React-Tutorial/Day-17/ParentComponent';
 
 
@@ -20,7 +21,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
 
-  <UserContextProvider />
+  <App />
 
 );
 

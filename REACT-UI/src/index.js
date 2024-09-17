@@ -9,7 +9,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle.js';
 
 
-import ConditionalRendering from './React-Tutorial/Day-20/ConditionalRendering.jsx';
+import { FakeStore } from './React-Tutorial/Day-10/fake.jsx';
 
 
 
@@ -17,7 +17,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
 
-  <ConditionalRendering />
+  <FakeStore />
 
 );
 

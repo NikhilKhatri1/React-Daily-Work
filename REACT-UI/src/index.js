@@ -9,8 +9,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle.js';
 
 
-// import ControlledDemo from './React-Tutorial/Day-19/ControlledDemo.jsx';
-import ParentComponent from './React-Tutorial/Day-19/ParentComponent.jsx';
+import ConditionalRendering from './React-Tutorial/Day-20/ConditionalRendering.jsx';
 
 
 
@@ -18,7 +17,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
 
-  <ParentComponent />
+  <ConditionalRendering />
 
 );
 

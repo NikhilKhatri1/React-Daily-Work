@@ -9,7 +9,9 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle.js';
 
 
-import { FakeStore } from './React-Tutorial/Day-10/fake.jsx';
+// import { FakeStore } from './React-Tutorial/Day-10/fake.jsx';
+// import { OptionDesign } from './React-Tutorial/Day-8/OptionDesign1.jsx';
+import { Counter } from './React-Tutorial/Day-9/btnCounter.jsx';
 
 
 
@@ -17,7 +19,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
 
-  <FakeStore />
+  <Counter />
 
 );
 

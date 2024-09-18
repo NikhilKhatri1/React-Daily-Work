@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 export function OptionDesign() {
-    const [movies, setMovies] = useState(["Lallu Bhai", "Devdas"]);
+    const [movies, setMovies] = useState(["Avengers", "Devdas"]);
     const [newMovie, setNewMovie] = useState("");
     const [selectedMovieIndex, setSelectedMovieIndex] = useState(null);
     const [editName, setEditName] = useState("");

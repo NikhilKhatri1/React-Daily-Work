@@ -6,9 +6,8 @@ function ChildComponent(props) {
             <h1>{props.title}</h1>
             <ul>
                 {
-                    props.items.map(item => {
-                        <li>{item}</li>
-                    })
+                    props.items.map(item => <li key={item}>{item}</li>
+                    )
                 }
             </ul>
         </div>

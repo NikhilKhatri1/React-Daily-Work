@@ -2,13 +2,13 @@ import React from 'react'
 
 function ChildComponent(props) {
     return (
-        <div className='container-fluid'>
+        <div>
             <h1>{props.title}</h1>
             <ul>
                 {
-                    props.items.map(item => (
-                        <li key={item}>{item}</li>
-                    ))
+                    props.items.map(item => {
+                        <li>{item}</li>
+                    })
                 }
             </ul>
         </div>

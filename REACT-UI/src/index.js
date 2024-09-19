@@ -9,7 +9,10 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle.js';
 
 
-import { FakestoreIndex } from './fakestore/fakestore-index.jsx';
+import ParentComponent from './React-Tutorial/Day-19/ParentComponent';
+// import { FakestoreIndex } from './fakestore/fakestore-index.jsx';
+// import { UseRefHookDom } from './React-Tutorial/Day-12/useRefDom.jsx';
+// import { UseRefHook } from './React-Tutorial/Day-12/useRefHook.jsx';
 
 
 
@@ -17,7 +20,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
 
-  <FakestoreIndex />
+  <ParentComponent />
 
 );
 

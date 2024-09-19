@@ -9,7 +9,8 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle.js';
 
 
-import ParentComponent from './React-Tutorial/Day-19/ParentComponent';
+import ContextDemo from './React-Tutorial/Day-15/ContextDemo';
+// import ParentComponent from './React-Tutorial/Day-19/ParentComponent';
 // import { FakestoreIndex } from './fakestore/fakestore-index.jsx';
 // import { UseRefHookDom } from './React-Tutorial/Day-12/useRefDom.jsx';
 // import { UseRefHook } from './React-Tutorial/Day-12/useRefHook.jsx';
@@ -20,7 +21,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
 
-  <ParentComponent />
+  <ContextDemo />
 
 );
 

@@ -1,44 +1,46 @@
-import { useContext, createContext, useState } from "react";
+import React, { useContext, createContext, useState } from 'react';
 
-const userContext = createContext(null);
+export const userContext = createContext(null);
 
 export function Level1Component() {
-    const context = useContext(userContext);
-
+    const context = useContext(userContext); // Use the context correctly
     return (
-        <div className="m-4 p-4 bg-danger text-white">
+        <div className='bg-warning mt-4 p-4'>
             <h1>Level-1 Component</h1>
-            <p>{context} </p>
+            <p className='fw-bold'>Message = {context}</p>
             <Level2Component />
         </div>
-    )
-
+    );
 }
 
 export function Level2Component() {
-    const context = useContext(userContext);
-
+    const context = useContext(userContext); // Use the context correctly
     return (
-        <div className="m-4 p-4 bg-warning text-dark">
-            <h1>level-2 Component</h1>
-            <p>{context} </p>
+        <div className='bg-danger mt-2 p-3'>
+            <h1>Level-2 Component</h1>
+            <p className='fw-bold'>Message = {context}</p>
         </div>
-    )
+    );
 }
 
-export function ContextDemo() {
+export default function ContextDemo() {
     const [msg, setMsg] = useState('');
 
-    function HandleChange(e) {
+    function handleInputChange(e) {
         setMsg(e.target.value);
     }
 
     return (
-        <div className="m-4 p-4 bg-dark text-white">
-            <userContext.Provider value={msg} >
-                <h1>Parent Component : <input type="text" value={msg} onChange={HandleChange} /></h1>
+        <div className='bg-success p-4'>
+            <userContext.Provider value={msg}>
+                <h1>Parent Component</h1>
+                <div className='d-flex text-align-center align-items-center'><span className='fw-bold me-4'>Message : </span><input
+                    type="text"
+                    onChange={handleInputChange}
+                    className='form-control w-25'
+                /></div>
                 <Level1Component />
             </userContext.Provider>
         </div>
-    )
+    );
 }

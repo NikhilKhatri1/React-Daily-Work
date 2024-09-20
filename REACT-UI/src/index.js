@@ -12,7 +12,8 @@ import 'bootstrap/dist/js/bootstrap.bundle.js';
 // import ContextDemo from './React-Tutorial/Day-15/ContextDemo';
 // import { UseRefHookDom } from './React-Tutorial/Day-12/useRefDom';
 // import { ConditionalRendering } from './React-Tutorial/Day-20/condition-Rendering';
-import ReducerDemo from './React-Tutorial/Day-21/reducerDemo';
+// import ReducerDemo from './React-Tutorial/Day-21/reducerDemo';
+import CounterOne from './React-Tutorial/Day-21/counterOne';
 // import ParentComponent from './React-Tutorial/Day-19/ParentComponent';
 // import { FakestoreIndex } from './fakestore/fakestore-index.jsx';
 // import { UseRefHookDom } from './React-Tutorial/Day-12/useRefDom.jsx';
@@ -24,7 +25,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
 
-  <ReducerDemo />
+  <CounterOne />
 
 );
 

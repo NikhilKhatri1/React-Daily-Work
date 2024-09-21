@@ -27,7 +27,8 @@ function App() {
 
     return (
         <CountContext.Provider value={{ countState: count, countDispatch: dispatch }}>
-            <div>
+            <div className='w-100 border border-3 p-2 text-center'>
+                <h1>Count - {count}</h1>
                 <ComponentA />
                 <ComponentB />
                 <ComponentC />

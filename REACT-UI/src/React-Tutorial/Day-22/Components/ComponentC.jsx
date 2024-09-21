@@ -4,7 +4,7 @@ import ComponentE from './ComponentE'
 
 function ComponentC() {
   return (
-    <div>
+    <div className='border border-3 p-2 m-2'>
       <h1>Component C</h1>
 
       <ComponentE />

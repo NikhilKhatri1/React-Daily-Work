@@ -3,7 +3,7 @@ import ComponentA from './Components/ComponentA'
 import ComponentB from './Components/ComponentB'
 import ComponentC from './Components/ComponentC'
 
-export const countContext = createContext()
+export const CountContext = createContext()
 
 const initialState = 0;
 
@@ -26,13 +26,13 @@ function App() {
 
 
     return (
-        <countContext.Provider value={{ countState: count, countDispatch: dispatch }}>
+        <CountContext.Provider value={{ countState: count, countDispatch: dispatch }}>
             <div>
                 <ComponentA />
                 <ComponentB />
                 <ComponentC />
             </div>
-        </countContext.Provider>
+        </CountContext.Provider>
     )
 }
 

@@ -10,7 +10,9 @@ import 'bootstrap/dist/js/bootstrap.bundle.js';
 
 
 // import CounterThree from './React-Tutorial/Day-21/counterThree';
-import App from './React-Tutorial/Day-22/App';
+// import App from './React-Tutorial/Day-22/App';
+import Fetch from './React-Tutorial/Day-22/FetchingWithReducer/fetch';
+// import Fetching from './React-Tutorial/Day-22/FetchingWithUseState/Fetching';
 // import { CounterTwo } from './React-Tutorial/Day-21/counterTwo';
 // import ContextDemo from './React-Tutorial/Day-15/ContextDemo';
 // import { UseRefHookDom } from './React-Tutorial/Day-12/useRefDom';
@@ -28,7 +30,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
 
-  <App />
+  <Fetch />
 
 );
 

@@ -7,11 +7,13 @@ import reportWebVitals from './reportWebVitals';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle.js';
+import UseMemoHook from './React-Tutorial/Day-22/Components/UseMemo/UseMemoHook';
 
 
 // import CounterThree from './React-Tutorial/Day-21/counterThree';
 // import App from './React-Tutorial/Day-22/App';
-import Fetch from './React-Tutorial/Day-22/FetchingWithReducer/fetch';
+// import Fetch from './React-Tutorial/Day-22/FetchingWithReducer/fetch';
+// import App from './React-Tutorial/Day-22/UseCallback/App';
 // import Fetching from './React-Tutorial/Day-22/FetchingWithUseState/Fetching';
 // import { CounterTwo } from './React-Tutorial/Day-21/counterTwo';
 // import ContextDemo from './React-Tutorial/Day-15/ContextDemo';
@@ -30,7 +32,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
 
-  <Fetch />
+  <UseMemoHook />
 
 );
 

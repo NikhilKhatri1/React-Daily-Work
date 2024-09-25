@@ -7,6 +7,9 @@ import { Featured } from './Components/Featured'
 import { New } from './Components/New'
 import { Navbar } from './Components/Navbar'
 import { OrderSummary } from './Components/OrderSummary'
+import { Users } from './Components/Users'
+import { Admin } from './Components/Admin'
+import UserDetail from './Components/UserDetail'
 
 function NestedRouteApp() {
     return (
@@ -23,9 +26,16 @@ function NestedRouteApp() {
                     <Route path='about' element={<About />} />
                     <Route path='Order-summary' element={<OrderSummary />} />
                     <Route path='Products' element={<Products />}>
+                        <Route index element={<Featured />} />
                         <Route path='Featured' element={<Featured />} />
                         <Route path='New' element={<New />} />
                     </Route>
+                    {/* We can nest Dynamic Route  */}
+                    <Route path='Users' element={<Users />} >
+                        <Route path=':userId' element={<UserDetail />} />
+                        <Route path='admin' element={<Admin />} />
+                    </Route>
+
                 </Routes>
             </BrowserRouter>
         </div>

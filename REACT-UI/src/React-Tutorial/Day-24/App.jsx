@@ -6,6 +6,7 @@ import { About } from './Components/About'
 import { Navbar } from './Components/Navbar'
 import { NavLinkNavbar } from './Components/NavLink'
 import { OrderSummary } from './Components/OrderSummary'
+import { NoMatch } from './Components/NoMatch'
 
 function App() {
     return (
@@ -24,6 +25,7 @@ function App() {
                     <Route path='/' element={<Home />} />
                     <Route path='about' element={<About />} />
                     <Route path='Order-summary' element={<OrderSummary />} />
+                    <Route path='*' element={<NoMatch />} />
                 </Routes>
             </BrowserRouter>
         </div>

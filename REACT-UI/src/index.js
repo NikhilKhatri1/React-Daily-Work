@@ -9,14 +9,15 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle.js';
 
 
-import App from './React-Tutorial/Day-24/App';
+// import App from './React-Tutorial/Day-24/App';
+import NestedRouteApp from './React-Tutorial/Day-24/NestedRouteApp';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
 
-  <App />
+  <NestedRouteApp />
 
 );
 

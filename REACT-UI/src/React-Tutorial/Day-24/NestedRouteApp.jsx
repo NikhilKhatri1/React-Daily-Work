@@ -10,6 +10,8 @@ import { OrderSummary } from './Components/OrderSummary'
 import { Users } from './Components/Users'
 import { Admin } from './Components/Admin'
 import UserDetail from './Components/UserDetail'
+import { Profile } from './Profile'
+import { LoginPage } from './LoginPage'
 
 function NestedRouteApp() {
     return (
@@ -24,6 +26,7 @@ function NestedRouteApp() {
                 <Routes>
                     <Route path='/' element={<Home />} />
                     <Route path='about' element={<About />} />
+
                     <Route path='Order-summary' element={<OrderSummary />} />
                     <Route path='Products' element={<Products />}>
                         <Route index element={<Featured />} />
@@ -35,6 +38,8 @@ function NestedRouteApp() {
                         <Route path=':userId' element={<UserDetail />} />
                         <Route path='admin' element={<Admin />} />
                     </Route>
+                    <Route path='Profile' element={<Profile />} />
+                    <Route path='Login' element={<LoginPage />} />
 
                 </Routes>
             </BrowserRouter>

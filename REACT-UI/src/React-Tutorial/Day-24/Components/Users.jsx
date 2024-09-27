@@ -2,6 +2,7 @@ import React from 'react'
 import { Outlet, useSearchParams } from 'react-router-dom'
 export const Users = () => {
     const [searchParams, setSearchParams] = useSearchParams();
+    const showActiveUser = searchParams.get('filter') === 'active'
     return (
         <div>
             <div>
@@ -11,8 +12,11 @@ export const Users = () => {
                 <Outlet />
             </div>
             <div>
-                <button className='btn btn-primary me-2' onClick={() => setSearchParams({ filter: true })}>Active User</button>
+                <button className='btn btn-primary me-2' onClick={() => setSearchParams({ filter: 'active' })}>Active User</button>
                 <button className='btn btn-primary me-2' onClick={() => setSearchParams({})}>Reset User</button>
+                <div>
+                    {showActiveUser ? (<h2>Showing Active User</h2>) : (<h2>Showing All User</h2>)}
+                </div>
             </div>
         </div>
     )

@@ -1,9 +1,21 @@
-import React from 'react'
-import { useParams } from 'react-router-dom'
-export const LoginPage = () => {
-    const params = useParams
-    const userId = params.userId
+import { useState, createContext, useContext } from "react";
+
+const AuthContext = createContext(null)
+export const AuthProvider = ({ children }) => {
+    const [user, setUser] = useState(null);
+    const login = () => {
+        setUser(user)
+    }
+    const logout = () => {
+        setUser(null)
+    }
     return (
-        <div>Welcome {userId}! </div>
+        <AuthContext.Provider value={{ user, login, logout }}>
+            {children}
+        </AuthContext.Provider>
     )
+}
+
+export const useAuth = () => {
+    return useContext(AuthContext)
 }

@@ -11,14 +11,15 @@ import 'bootstrap/dist/js/bootstrap.bundle.js';
 
 // import App from './React-Tutorial/Day-24/App';
 // import NestedRouteApp from './React-Tutorial/Day-24/NestedRouteApp';
-import { Body } from './Netflix-Clone/Body.component';
+// import { Body } from './Netflix-Clone/Body.component';
+import App from './React-Tutorial/Day-26/App';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
 
-  <Body />
+  <App />
 
 );
 

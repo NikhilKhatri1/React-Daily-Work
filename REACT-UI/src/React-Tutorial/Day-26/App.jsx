@@ -6,7 +6,7 @@ import Footer from "./footer";
 
 function App() {
     return (
-        <div>
+        <div className="w-full text-gray-800">
             <Header />
             <Main />
             <Footer />

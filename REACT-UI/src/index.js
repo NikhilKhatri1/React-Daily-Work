@@ -15,14 +15,15 @@ import 'bootstrap/dist/js/bootstrap.bundle.js';
 // import App from './React-Tutorial/Day-26/App';
 // import Iterate from './React-Tutorial/Day-26/Iterate';
 // import UserList from './React-Tutorial/Day-26/UserList';
-import ConditionalRendering from './React-Tutorial/Day-26/ConditionalRendering';
+// import ConditionalRendering from './React-Tutorial/Day-26/ConditionalRendering';
+import NewApp from './React-Tutorial/Day-26/NewApp';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
 
-  <ConditionalRendering />
+  <NewApp />
 
 );
 

@@ -12,14 +12,17 @@ import 'bootstrap/dist/js/bootstrap.bundle.js';
 // import App from './React-Tutorial/Day-24/App';
 // import NestedRouteApp from './React-Tutorial/Day-24/NestedRouteApp';
 // import { Body } from './Netflix-Clone/Body.component';
-import App from './React-Tutorial/Day-26/App';
+// import App from './React-Tutorial/Day-26/App';
+// import Iterate from './React-Tutorial/Day-26/Iterate';
+// import UserList from './React-Tutorial/Day-26/UserList';
+import ConditionalRendering from './React-Tutorial/Day-26/ConditionalRendering';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
 
-  <App />
+  <ConditionalRendering />
 
 );
 

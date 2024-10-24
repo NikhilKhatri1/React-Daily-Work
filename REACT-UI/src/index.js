@@ -16,14 +16,18 @@ import 'bootstrap/dist/js/bootstrap.bundle.js';
 // import Iterate from './React-Tutorial/Day-26/Iterate';
 // import UserList from './React-Tutorial/Day-26/UserList';
 // import ConditionalRendering from './React-Tutorial/Day-26/ConditionalRendering';
-import NewApp from './React-Tutorial/Day-26/NewApp';
+// import NewApp from './React-Tutorial/Day-26/NewApp';
+// import UseState from './React-Tutorial/Day-26/useState';
+// import Movie from './React-Tutorial/Day-26/movie';
+// import ParentApp from './React-Tutorial/Day-26/ParentApp';
+import ExampleOne from './React-Tutorial/Day-27/ExampleOne';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
 
-  <NewApp />
+  <ExampleOne />
 
 );
 

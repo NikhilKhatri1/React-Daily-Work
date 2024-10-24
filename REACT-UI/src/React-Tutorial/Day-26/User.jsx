@@ -3,7 +3,7 @@ import React from 'react'
 const User = (props) => {
     if (props.loggedIn && props.Admin) {
         return (
-            <h1>Welcome Admin</h1>
+            <h1>Welcome Admin 1:49</h1>
         )
     }
     else {

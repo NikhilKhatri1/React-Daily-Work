@@ -22,14 +22,16 @@ import 'bootstrap/dist/js/bootstrap.bundle.js';
 // import ParentApp from './React-Tutorial/Day-26/ParentApp';
 // import ExampleOne from './React-Tutorial/Day-27/ExampleOne';
 // import JSON from './React-Tutorial/Day-27/JSON';
-import ExampleTwo from './React-Tutorial/Day-27/ExampleTwo';
+// import JSONComponent from './React-Tutorial/Day-27/JSON';
+import CopyInput from './React-Tutorial/Day-27/CopyInput';
+// import ExampleTwo from './React-Tutorial/Day-27/ExampleTwo';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
 
-  <ExampleTwo />
+  <CopyInput />
 
 );
 

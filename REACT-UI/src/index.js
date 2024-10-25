@@ -23,7 +23,9 @@ import 'bootstrap/dist/js/bootstrap.bundle.js';
 // import ExampleOne from './React-Tutorial/Day-27/ExampleOne';
 // import JSON from './React-Tutorial/Day-27/JSON';
 // import JSONComponent from './React-Tutorial/Day-27/JSON';
-import CopyInput from './React-Tutorial/Day-27/CopyInput';
+// import CopyInput from './React-Tutorial/Day-27/CopyInput';
+// import UseEffect from './React-Tutorial/Day-28/useEffect';
+import App from './React-Tutorial/Day-28/App';
 // import ExampleTwo from './React-Tutorial/Day-27/ExampleTwo';
 
 
@@ -31,7 +33,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
 
-  <CopyInput />
+  <App />
 
 );
 

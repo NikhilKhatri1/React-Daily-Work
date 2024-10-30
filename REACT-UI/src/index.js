@@ -31,7 +31,8 @@ import 'bootstrap/dist/js/bootstrap.bundle.js';
 // import UseRefHook from './React-Tutorial/Day-29/UseRefHook';
 // import UseRef from './React-Tutorial/Day-29/UseRef';
 // import UseIdHook from './React-Tutorial/Day-30/useIdHook';
-import ProjectApp from './React-Tutorial/Day-30/ProjectApp';
+// import ProjectApp from './React-Tutorial/Day-30/ProjectApp';
+import App from './React-Tutorial/Day-31/E-Commerce Advance Filtering/App';
 // import ExampleTwo from './React-Tutorial/Day-27/ExampleTwo';
 
 
@@ -39,7 +40,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
 
-  <ProjectApp />
+  <App />
 
 );
 

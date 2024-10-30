@@ -2,7 +2,7 @@ import React from 'react'
 
 const DaisyUi = () => {
     return (
-        <div>
+        <div className='h-[100vh] bg-[#1b1b1b]'>
             <h1>Daisy Ui make tailwind classs smaller like bootstrap shortcut name </h1>
             {/* Open the modal using document.getElementById('ID').showModal() method */}
             <button className="btn" onClick={() => document.getElementById('my_modal_1').showModal()}>open modal</button>

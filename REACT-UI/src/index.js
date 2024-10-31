@@ -11,7 +11,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.js';
 
 
 // import ReduxToolkitApp from './React-Tutorial/Day-34/ReduxToolkitApp';
-import App from './React-Tutorial/Day-34/App';
+import App from './React-Tutorial/Day-35/App';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

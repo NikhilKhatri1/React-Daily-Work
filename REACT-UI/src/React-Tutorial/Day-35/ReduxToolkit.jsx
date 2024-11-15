@@ -11,7 +11,7 @@ const ReduxToolkit = () => {
             {/* <SpecificProduct /> */}
             {/* <AddNewProduct /> */}
             {/* <Updateproduct productId={2}/> */}
-            <DeleteProduct />
+            <DeleteProduct productId={2} />
         </div>
     )
 }

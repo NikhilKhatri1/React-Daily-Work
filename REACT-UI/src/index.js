@@ -11,15 +11,19 @@ import 'bootstrap/dist/js/bootstrap.bundle.js';
 
 
 // import ReduxToolkitApp from './React-Tutorial/Day-34/ReduxToolkitApp';
-import App from './React-Tutorial/Day-36/App';
+// import App from './React-Tutorial/Day-36/App';
+// import UseStateHook from './React-Tutorial/Day-37/useStateHook';
+// import UseStateHook1 from './React-Tutorial/Day-37/useStateHook1';
+import UseStateCounter from './React-Tutorial/Day-37/useStateCounter';
+// import { Body } from './Netflix-Clone/Body.component';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
 
-    <App/>
- 
+    <UseStateCounter />
+
 );
 
 // If you want to start measuring performance in your app, pass a function

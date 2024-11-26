@@ -19,7 +19,8 @@ import 'bootstrap/dist/js/bootstrap.bundle.js';
 // import UseRefHook from './React-Tutorial/Day-37/UseRefHook';
 // import UseRefHookDom from './React-Tutorial/Day-37/UseRefHookDom';
 // import UseMemo from './React-Tutorial/Day-37/UseMemo';
-import UseCallbackHook from './React-Tutorial/Day-37/UseCallbackHook';
+// import UseCallbackHook from './React-Tutorial/Day-37/UseCallbackHook';
+import App from './React-Tutorial/Day-38/App';
 // import { Body } from './Netflix-Clone/Body.component';
 
 
@@ -27,7 +28,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
 
-    <UseCallbackHook />
+    <App />
 
 );
 

@@ -1,12 +1,14 @@
 import React from 'react'
-import ContextProvider from './AppContext'
-import App1 from './App1'
+import AppContextProvider from './context/AppContext'
+import Profile from './component/Profile'
+import Footer from './component/Footer'
 
 const App = () => {
     return (
-        <ContextProvider>
-            <App1 />
-        </ContextProvider>
+        <AppContextProvider>
+            <Profile />
+            <Footer />
+        </AppContextProvider>
     )
 }
 

@@ -10,6 +10,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.js';
 
 
 
+
 // import ReduxToolkitApp from './React-Tutorial/Day-34/ReduxToolkitApp';
 // import App from './React-Tutorial/Day-36/App';
 // import UseStateHook from './React-Tutorial/Day-37/useStateHook';
@@ -23,15 +24,21 @@ import 'bootstrap/dist/js/bootstrap.bundle.js';
 // import App from './React-Tutorial/Day-38/App';
 // import UseReducerHook from './React-Tutorial/Day-39/UseReducerHook';
 // import CounterReducer from './React-Tutorial/Day-29/CounterReducer';
-import App from './React-Tutorial/Day-40/App';
+// import App from './React-Tutorial/Day-40/App';
+// import ClassEample from './React-Tutorial/Day-39/classComponent';
+// import Headder from './React-Tutorial/Day-41/Headder';
+// import NestedComponent from './React-Tutorial/Day-41/nestedComponent';
 // import { Body } from './Netflix-Clone/Body.component';
+// import ClassCounter from './React-Tutorial/Day-39/classCount';
+import Counter from './React-Tutorial/Day-41/Counter';
+import Parent from './React-Tutorial/Day-41/Parent';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
 
-    <App />
+    <Parent />
 
 );
 

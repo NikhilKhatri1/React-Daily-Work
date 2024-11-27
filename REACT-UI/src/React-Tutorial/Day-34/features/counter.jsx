@@ -8,9 +8,9 @@ const Counter = () => {
     const dispatch = useDispatch()
     return (
         <div>
-            <h1>{count}</h1>
-            <button className='px-4 py-2 border bg-sky-300' onClick={() => dispatch(increment())}>+</button>
-            <button className='px-4 py-2 border bg-sky-300' onClick={() => dispatch(decrement())}>-</button>
+            <h1>Count: {count}</h1>
+            <button className='px-4 py-2 border rounded bg-sky-300 me-2' onClick={() => dispatch(increment())}>+</button>
+            <button className='px-4 py-2 border rounded bg-sky-300' onClick={() => dispatch(decrement())}>-</button>
         </div>
     )
 }

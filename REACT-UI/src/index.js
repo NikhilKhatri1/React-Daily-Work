@@ -20,7 +20,10 @@ import 'bootstrap/dist/js/bootstrap.bundle.js';
 // import UseRefHookDom from './React-Tutorial/Day-37/UseRefHookDom';
 // import UseMemo from './React-Tutorial/Day-37/UseMemo';
 // import UseCallbackHook from './React-Tutorial/Day-37/UseCallbackHook';
-import App from './React-Tutorial/Day-38/App';
+// import App from './React-Tutorial/Day-38/App';
+// import UseReducerHook from './React-Tutorial/Day-39/UseReducerHook';
+// import CounterReducer from './React-Tutorial/Day-29/CounterReducer';
+import App from './React-Tutorial/Day-40/App';
 // import { Body } from './Netflix-Clone/Body.component';
 
 

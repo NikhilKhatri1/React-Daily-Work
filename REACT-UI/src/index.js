@@ -11,6 +11,9 @@ import 'bootstrap/dist/js/bootstrap.bundle.js';
 
 
 
+import ConditionalRendering from './React-Tutorial/Day-42/ConditionalRendering';
+// import DefaultPropParent from './React-Tutorial/Day-42/DefaultPropParent';
+// import Parent from './React-Tutorial/Day-42/Parent';
 // import ReduxToolkitApp from './React-Tutorial/Day-34/ReduxToolkitApp';
 // import App from './React-Tutorial/Day-36/App';
 // import UseStateHook from './React-Tutorial/Day-37/useStateHook';
@@ -30,15 +33,17 @@ import 'bootstrap/dist/js/bootstrap.bundle.js';
 // import NestedComponent from './React-Tutorial/Day-41/nestedComponent';
 // import { Body } from './Netflix-Clone/Body.component';
 // import ClassCounter from './React-Tutorial/Day-39/classCount';
-import Counter from './React-Tutorial/Day-41/Counter';
-import Parent from './React-Tutorial/Day-41/Parent';
+// import Counter from './React-Tutorial/Day-41/Counter';
+// import Parent from './React-Tutorial/Day-41/Parent';
+// import PropParent from './React-Tutorial/Day-41/PropParent';
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
 
-    <Parent />
+    <ConditionalRendering />
 
 );
 

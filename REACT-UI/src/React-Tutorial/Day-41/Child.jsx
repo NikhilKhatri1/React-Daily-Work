@@ -1,7 +1,14 @@
-import React from 'react';
+import React from 'react'
 
-function Child(props) {
-    return <h2>Hello, {props.name}!</h2>;
+const Child = (props) => {
+  const { userName, phone } = props.value;
+  return (
+    <div>
+      <h1>Child Component</h1>
+      <h1>my Name is {userName}</h1>
+      <h1>phone : {phone}</h1>
+    </div>
+  )
 }
 
-export default Child;
+export default Child

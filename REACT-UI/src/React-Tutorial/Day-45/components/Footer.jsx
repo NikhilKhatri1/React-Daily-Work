@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { UserContext } from '../Context/AppContext'
 
 const Footer = () => {
+  const { person } = useContext(UserContext)
   return (
-    <div>Footer</div>
+    <div>
+      <h1>Footer</h1>
+      <h5>{person}</h5>
+    </div>
   )
 }
 

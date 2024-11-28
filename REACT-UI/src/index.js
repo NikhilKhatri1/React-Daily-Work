@@ -11,7 +11,14 @@ import 'bootstrap/dist/js/bootstrap.bundle.js';
 
 
 
-import ConditionalRendering from './React-Tutorial/Day-42/ConditionalRendering';
+// import ConditionalRendering from './React-Tutorial/Day-42/ConditionalRendering';
+// import Array from './React-Tutorial/Day-43/Array';
+// import Parent from './React-Tutorial/Day-43/Parent';
+// import InputChange from './React-Tutorial/Day-43/InputChange';
+// import ConditionalRendering from './React-Tutorial/Day-43/ConditionalRendering';
+// import UseEffect from './React-Tutorial/Day-43/UseEffect';
+import FetchingData from './React-Tutorial/Day-43/FetchingData';
+import Parent from './React-Tutorial/Day-44/Parent';
 // import DefaultPropParent from './React-Tutorial/Day-42/DefaultPropParent';
 // import Parent from './React-Tutorial/Day-42/Parent';
 // import ReduxToolkitApp from './React-Tutorial/Day-34/ReduxToolkitApp';
@@ -43,7 +50,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
 
-    <ConditionalRendering />
+    <Parent />
 
 );
 

@@ -12,7 +12,9 @@ import 'bootstrap/dist/js/bootstrap.bundle.js';
 
 
 
-import App from './React-Tutorial/Day-45/App';
+// import App from './React-Tutorial/Day-45/App';
+// import UseReducerHook from './React-Tutorial/Day-46/UseReducerHook';
+import Count from './React-Tutorial/Day-46/Count';
 
 
 
@@ -21,7 +23,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
 
-    <App />
+    <Count />
 
 );
 

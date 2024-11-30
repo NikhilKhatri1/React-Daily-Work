@@ -14,7 +14,8 @@ import 'bootstrap/dist/js/bootstrap.bundle.js';
 
 // import App from './React-Tutorial/Day-45/App';
 // import UseReducerHook from './React-Tutorial/Day-46/UseReducerHook';
-import Count from './React-Tutorial/Day-46/Count';
+// import Count from './React-Tutorial/Day-46/Count';
+import App from './React-Tutorial/Day-47/App';
 
 
 
@@ -23,7 +24,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
 
-    <Count />
+    <App />
 
 );
 

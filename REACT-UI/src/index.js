@@ -15,7 +15,9 @@ import 'bootstrap/dist/js/bootstrap.bundle.js';
 // import App from './React-Tutorial/Day-45/App';
 // import UseReducerHook from './React-Tutorial/Day-46/UseReducerHook';
 // import Count from './React-Tutorial/Day-46/Count';
-import App from './React-Tutorial/Day-47/App';
+// import App from './React-Tutorial/Day-47/App';
+// import ComplexReducer from './React-Tutorial/Day-48/ComplexReducer';
+import DataFetcher from './React-Tutorial/Day-48/DataFetchReducer';
 
 
 
@@ -24,7 +26,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
 
-    <App />
+    <DataFetcher />
 
 );
 

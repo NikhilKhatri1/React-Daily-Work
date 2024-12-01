@@ -18,7 +18,15 @@ import 'bootstrap/dist/js/bootstrap.bundle.js';
 // import App from './React-Tutorial/Day-47/App';
 // import ComplexReducer from './React-Tutorial/Day-48/ComplexReducer';
 // import DataFetcher from './React-Tutorial/Day-48/DataFetchReducer';
-import UseRefHook from './React-Tutorial/Day-48/UseRefHook';
+// import UseRefHook from './React-Tutorial/Day-48/UseRefHook';
+// import UseRefClarity from './React-Tutorial/Day-48/UseRefClarity';
+// import FormInReact from './React-Tutorial/Day-48/FormInReact';
+// import UseAxios from './React-Tutorial/Day-49/useAxios';
+// import FetchData from './React-Tutorial/Day-49/FetchData';
+// import UseMemoHook from './React-Tutorial/Day-50/useMemoHook';
+// import UseState from './React-Tutorial/Day-50/UseState';
+// import App from './React-Tutorial/Day-51/App';
+import Practise from './React-Tutorial/Day-51/context/Practise';
 
 
 
@@ -27,7 +35,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
 
-    <UseRefHook />
+    <Practise />
 
 );
 

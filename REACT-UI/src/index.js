@@ -26,7 +26,8 @@ import 'bootstrap/dist/js/bootstrap.bundle.js';
 // import UseMemoHook from './React-Tutorial/Day-50/useMemoHook';
 // import UseState from './React-Tutorial/Day-50/UseState';
 // import App from './React-Tutorial/Day-51/App';
-import Practise from './React-Tutorial/Day-51/context/Practise';
+// import Practise from './React-Tutorial/Day-51/context/Practise';
+import Parent from './React-Tutorial/Day-52/Parent';
 
 
 
@@ -35,7 +36,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
 
-    <Practise />
+    <Parent />
 
 );
 

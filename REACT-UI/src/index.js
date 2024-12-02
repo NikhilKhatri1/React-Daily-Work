@@ -27,7 +27,10 @@ import 'bootstrap/dist/js/bootstrap.bundle.js';
 // import UseState from './React-Tutorial/Day-50/UseState';
 // import App from './React-Tutorial/Day-51/App';
 // import Practise from './React-Tutorial/Day-51/context/Practise';
-import Parent from './React-Tutorial/Day-52/Parent';
+// import Parent from './React-Tutorial/Day-52/Parent';
+// import AddItem from './React-Tutorial/Day-52/AddItem';
+// import ParentComponent from './React-Tutorial/Day-52/PureComponent';
+import App from './React-Tutorial/Day-52/HocComponent';
 
 
 
@@ -36,7 +39,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
 
-    <Parent />
+    <App />
 
 );
 

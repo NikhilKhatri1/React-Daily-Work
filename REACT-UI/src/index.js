@@ -31,6 +31,8 @@ import 'bootstrap/dist/js/bootstrap.bundle.js';
 // import AddItem from './React-Tutorial/Day-52/AddItem';
 // import ParentComponent from './React-Tutorial/Day-52/PureComponent';
 import App from './React-Tutorial/Day-52/HocComponent';
+// import CodeSplitng from './React-Tutorial/Day-53/CodeSplitng';
+// import App from './React-Tutorial/Day-53/RenderProp';
 
 
 

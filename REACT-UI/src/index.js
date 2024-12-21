@@ -11,7 +11,10 @@ import 'bootstrap/dist/js/bootstrap.bundle.js';
 
 
 // import App from './React-Tutorial/Day-53/App';
-import Parent from './React-Tutorial/Day-53/liftingStateUp/Parent';
+// import Parent from './React-Tutorial/Day-53/liftingStateUp/Parent';
+// import DefaultProp from './React-Tutorial/Day-53/DefaultProps/DefaultProp';
+// import App from './React-Tutorial/Day-53/KeyProp/App';
+import App from './React-Tutorial/Day-54/App';
 
 
 
@@ -19,7 +22,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
 
-    <Parent />
+    <App />
 
 );
 

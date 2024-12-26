@@ -14,7 +14,10 @@ import 'bootstrap/dist/js/bootstrap.bundle.js';
 // import Parent from './React-Tutorial/Day-53/liftingStateUp/Parent';
 // import DefaultProp from './React-Tutorial/Day-53/DefaultProps/DefaultProp';
 // import App from './React-Tutorial/Day-53/KeyProp/App';
-import App from './React-Tutorial/Day-54/App';
+// import App from './React-Tutorial/Day-54/App';
+// import OutputOne from './React-Tutorial/Day-57/Output-1';
+// import App from './React-Tutorial/Day-57/Output-2';
+import App from './React-Tutorial/Day-57/output-3';
 
 
 

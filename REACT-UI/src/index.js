@@ -21,7 +21,8 @@ import 'bootstrap/dist/js/bootstrap.bundle.js';
 // import Counter from './React-Tutorial/Day-57/Output-4';
 // import App from './React-Tutorial/Day-57/Reducer';
 // import ImprovedCount from './React-Tutorial/Day-57/ImprovedCount';
-import StopWatch from './React-Tutorial/Day-57/Output-6';
+// import StopWatch from './React-Tutorial/Day-57/Output-6';
+import Count from './React-Tutorial/Day-59/Count';
 
 
 
@@ -29,7 +30,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
 
-    <StopWatch />
+    <Count />
 
 );
 

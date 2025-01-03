@@ -22,7 +22,10 @@ import 'bootstrap/dist/js/bootstrap.bundle.js';
 // import App from './React-Tutorial/Day-57/Reducer';
 // import ImprovedCount from './React-Tutorial/Day-57/ImprovedCount';
 // import StopWatch from './React-Tutorial/Day-57/Output-6';
-import Count from './React-Tutorial/Day-59/Count';
+// import Count from './React-Tutorial/Day-59/Count';
+// import App from './React-Tutorial/Day-59/App';
+// import Password from './React-Tutorial/Day-59/Password';
+import ImageGallery from './React-Tutorial/Day-59/removeElement';
 
 
 
@@ -30,7 +33,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
 
-    <Count />
+    <ImageGallery />
 
 );
 

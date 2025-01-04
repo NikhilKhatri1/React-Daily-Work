@@ -25,7 +25,9 @@ import 'bootstrap/dist/js/bootstrap.bundle.js';
 // import Count from './React-Tutorial/Day-59/Count';
 // import App from './React-Tutorial/Day-59/App';
 // import Password from './React-Tutorial/Day-59/Password';
-import ImageGallery from './React-Tutorial/Day-59/removeElement';
+// import ImageGallery from './React-Tutorial/Day-59/removeElement';
+// import Fetchdata from './React-Tutorial/Day-60/Fetchdata';
+import TodoApp from './React-Tutorial/Day-60/TodoApp';
 
 
 
@@ -33,7 +35,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
 
-    <ImageGallery />
+    <TodoApp />
 
 );
 

@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@consumet/extensions": "^1.8.1",
     "@reduxjs/toolkit": "^2.5.0",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -10,6 +11,7 @@
     "axios": "^1.7.4",
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
+    "crypto-browserify": "^3.12.1",
     "formik": "^2.4.6",
     "jquery": "^3.7.1",
     "leaflet": "^1.9.4",

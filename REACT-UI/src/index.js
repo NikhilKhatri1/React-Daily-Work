@@ -7,8 +7,9 @@ import reportWebVitals from './reportWebVitals';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle.js';
-import App from './React-Tutorial/Day-62/App';
-import FetchData from './React-Tutorial/Day-63/fetchData';
+import App from './React-Tutorial/Day-63/App';
+// import App from './React-Tutorial/Day-62/App';
+// import FetchData from './React-Tutorial/Day-63/fetchData';
 
 // import App from './React-Tutorial/Day-60/App';
 // import RefHook from './React-Tutorial/Day-46/refHook';
@@ -46,7 +47,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
 
-    <FetchData />
+    <App />
 
 );
 

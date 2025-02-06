@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@apollo/client": "^3.12.10",
     "@consumet/extensions": "^1.8.1",
     "@reduxjs/toolkit": "^2.5.0",
     "@testing-library/jest-dom": "^5.17.0",
@@ -13,6 +14,7 @@
     "bootstrap-icons": "^1.11.3",
     "crypto-browserify": "^3.12.1",
     "formik": "^2.4.6",
+    "graphql": "^16.10.0",
     "jquery": "^3.7.1",
     "leaflet": "^1.9.4",
     "react": "^18.3.1",
